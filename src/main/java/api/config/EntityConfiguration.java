@@ -4,7 +4,7 @@ import services.timeEntryService;
 public enum EntityConfiguration {
 
 
-    TIME_USER {
+    TIMEUSER {
         @Override
         public Class<?> getEntityService() {
             return timeEntryService.class;
