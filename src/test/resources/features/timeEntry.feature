@@ -1,7 +1,6 @@
 @timeEntry
 Feature: Time Entry
 
-  @Test
   Scenario Outline: Obtener horas de Workspace y User
     Given una cuenta creada en clockify y x-api-key generado
     And un workspaceId '<workSpaceId>' y un id '<userId>'
