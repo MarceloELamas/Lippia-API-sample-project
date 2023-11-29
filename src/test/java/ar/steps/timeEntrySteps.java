@@ -7,7 +7,7 @@ import com.google.cloud.BaseService;
 import cucumber.api.java.en.When;
 import io.cucumber.java.en.Given;
 import org.apache.commons.lang.StringUtils;
-
+import services.BaseServices;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
 
@@ -16,7 +16,7 @@ public class timeEntrySteps extends PageSteps {
     @Given("una cuenta creada en clockify y x-api-key generado")
     public void unaCuentaCreadaEnClockifyYXApiKeyGenerado() {
         String apikey = System.getenv("API_KEY");
-        BaseService.AddParams("apiKey", apikey);
+        BaseServices.API_KEY.set(apikey);
     }
 
     @When("^I perform a '(.*)' to '(.*)' endpoint with the '(.*)' and '(.*)'$")
