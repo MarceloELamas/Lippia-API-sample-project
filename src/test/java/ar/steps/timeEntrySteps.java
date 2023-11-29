@@ -7,6 +7,7 @@ import com.google.cloud.BaseService;
 import cucumber.api.java.en.When;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import org.apache.commons.lang.StringUtils;
 import services.BaseServices;
 import java.lang.reflect.InvocationTargetException;
@@ -47,5 +48,8 @@ public class timeEntrySteps extends PageSteps {
     }
 
 
-
+    @Then("obtengo los datos de mi proyecto")
+    public void obtengoLosDatosDeMiProyecto() {
+        idValidator.validate();
+    }
 }
