@@ -1,3 +1,4 @@
+
 Feature: Api example
   As an api user I want to execute request in order to get proper responses
 
