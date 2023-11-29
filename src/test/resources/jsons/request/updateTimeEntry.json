@@ -1,0 +1,19 @@
+{
+"url": "{{baseUrl}}",
+
+"headers": {
+"Content-Type": "application/json",
+"x-api-key": "{{apiKey}}"
+},
+"body": {
+  "customFields": [
+    {
+      "customFieldId": "Holaa"
+    }
+  ],
+  "description": "{{description}}",
+  "end": "{{END}}",
+  "start": "{{START}}"
+},
+"endpoint": "/v1/workspaces/{{workspaceId}}/time-entries/{{timeId}}"
+}

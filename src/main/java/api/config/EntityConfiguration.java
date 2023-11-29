@@ -1,6 +1,7 @@
 package api.config;
 import services.addTimeEntryServices;
 import services.timeEntryService;
+import services.updateTimeEntryServices;
 
 public enum EntityConfiguration {
 
@@ -16,6 +17,12 @@ public enum EntityConfiguration {
         @Override
         public Class<?> getEntityService() {
             return addTimeEntryServices.class;
+        }
+    },
+    UPDATETIMEUSER {
+        @Override
+        public Class<?> getEntityService() {
+            return updateTimeEntryServices.class;
         }
     };
 
