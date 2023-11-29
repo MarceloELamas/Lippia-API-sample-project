@@ -38,7 +38,7 @@ public class addTimeEntrySteps extends PageSteps {
     }
 
 
-    @Then("obtengo la descripcion de mi hora cargada")
+    @Then("obtengo el id de mi hora cargada")
     public void obtengoLaDescripcionDeMiHoraCargada() {
         validatorService.validateAddEntry();
     }

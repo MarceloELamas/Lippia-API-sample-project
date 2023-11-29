@@ -12,7 +12,7 @@ public class validatorService {
     }
     public static void validateAddEntry (){
         addTimeEntryResponse response = (addTimeEntryResponse) APIManager.getLastResponse().getResponse();
-        Assert.assertNotNull(response.getDescription(), "ID ES NULO");
+        Assert.assertNotNull(response.getId(), "ID ES NULO");
     }
 
     public static void validateUpdateEntry (){

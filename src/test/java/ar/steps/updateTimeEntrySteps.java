@@ -19,4 +19,5 @@ public class updateTimeEntrySteps extends PageSteps {
     public void obtengoLaDescripcionDeMiHoraActualizada() {
         validatorService.validateUpdateEntry();
     }
+
 }
