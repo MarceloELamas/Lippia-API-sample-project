@@ -1,13 +1,14 @@
 @addTimeEntry
 Feature: Add Time Entry
 
-  @Test
+
   Scenario Outline: Agregar horas a un proyecto
     Given una cuenta creada en clockify y x-api-key generado
     And un workspaceId '<workSpaceId>' y proyectId '<proyectId>'
     And una descripcion '<description>', fecha hora de entrada '<start>' y salida '<end>'
     When I perform a '<operation>' to '<entity>' endpoint with the '<jsonName>' and ''
     Then status code <statusCode> is obtained
+    Then obtengo la descripcion de mi hora cargada
 
     Examples:
       | operation | entity      | jsonName     | statusCode | workSpaceId              | proyectId                | description      | start                | end                  |

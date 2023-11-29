@@ -5,8 +5,10 @@ import com.crowdar.core.PageSteps;
 import com.google.api.client.repackaged.com.google.common.base.Splitter;
 import cucumber.api.java.en.When;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import org.apache.commons.lang.StringUtils;
 import services.BaseServices;
+import services.validatorService;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
@@ -36,6 +38,8 @@ public class addTimeEntrySteps extends PageSteps {
     }
 
 
-
-
+    @Then("obtengo la descripcion de mi hora cargada")
+    public void obtengoLaDescripcionDeMiHoraCargada() {
+        validatorService.validateAddEntry();
+    }
 }
