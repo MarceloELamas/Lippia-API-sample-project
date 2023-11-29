@@ -23,7 +23,7 @@ public class timeEntrySteps extends PageSteps {
     }
     @And("^un workspaceId '(.*)' y un id '(.*)'$")
     public void unWorkspaceIdYUnId(String workSpaceId, String id) {
-        BaseServices.WORKSPACEID.set(workSpaceId);
+        BaseServices.WORKSPACE_ID.set(workSpaceId);
         BaseServices.ID.set(id);
 
     }

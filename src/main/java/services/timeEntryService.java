@@ -20,7 +20,7 @@ public class timeEntryService extends BaseServices {
         Map<String, String> params = new HashMap<>();
         params.put("baseUrl", PropertyManager.getProperty("base.api.url"));
         params.put("apiKey", API_KEY.get());
-        params.put("workspaceId", WORKSPACEID.get());
+        params.put("workspaceId", WORKSPACE_ID.get());
         params.put("id", ID.get());
         return params;
     }
