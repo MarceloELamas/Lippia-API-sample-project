@@ -10,14 +10,14 @@ public class timeEntryResponse {
 
     public String id;
     public String description;
-    public List tagIds;
+    public List<Object> tagIds;
     public String userId;
     public boolean billable;
     public Object taskId;
     public String projectId;
     public String workspaceId;
     public TimeInterval timeInterval;
-    public List customFieldValues;
+    public List<Object> customFieldValues;
     public String type;
     public Object kioskId;
     public HourlyRate hourlyRate;
