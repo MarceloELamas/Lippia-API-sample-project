@@ -1,6 +1,6 @@
 package services;
 
-import api.model.Data;
+import api.model.timeEntryResponse;
 import com.crowdar.api.rest.MethodsService;
 import com.crowdar.api.rest.Response;
 import com.crowdar.util.MapUtils;
@@ -9,10 +9,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.Map;
 
 
-public class UserService extends MethodsService {
+public class timeEntryService extends MethodsService {
 
     public static Response get(String jsonName) {
-       return get(jsonName, Data.class);
+       return get(jsonName, timeEntryResponse[].class);
     }
 
     public static Response delete(String jsonName) {
