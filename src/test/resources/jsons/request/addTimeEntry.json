@@ -1,0 +1,28 @@
+{
+  "url": "{{baseUrl}}",
+
+  "headers": {
+    "Content-Type": "application/json",
+    "x-api-key": "{{apiKey}}"
+  },
+  "body": {
+  "billable": false,
+  "customAttributes": [
+    {
+      "name": "Hola",
+      "namespace": "marcelo01WP",
+      "value": "65386fe31a76042b2285bf81"
+    }
+  ],
+  "customFields": [
+    {
+      "customFieldId": "Hola"
+    }
+  ],
+  "description": "{{description}}",
+  "end": "{{END}}",
+  "projectId": "{{proyectId}}",
+  "start": "{{START}}"
+  },
+  "endpoint": "/v1/workspaces/{{workspaceId}}/time-entries"
+}
