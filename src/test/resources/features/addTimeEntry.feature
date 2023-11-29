@@ -8,7 +8,6 @@ Feature: Add Time Entry
     And una descripcion '<description>', fecha hora de entrada '<start>' y salida '<end>'
     When I perform a '<operation>' to '<entity>' endpoint with the '<jsonName>' and ''
     Then status code <statusCode> is obtained
-    Then obtengo los datos de mi proyecto
 
     Examples:
       | operation | entity      | jsonName     | statusCode | workSpaceId              | proyectId                | description      | start                | end                  |

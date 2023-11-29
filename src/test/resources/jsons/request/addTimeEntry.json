@@ -21,7 +21,7 @@
   ],
   "description": "{{description}}",
   "end": "{{END}}",
-  "projectId": "{{proyectId}}",
+  "projectId": "{{PROYECTO}}",
   "start": "{{START}}"
   },
   "endpoint": "/v1/workspaces/{{workspaceId}}/time-entries"

@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class addTimeEntryServices extends BaseServices {
 
-    public static Response POST(String jsonName) {
+    public static Response post(String jsonName) {
         return post(jsonName, addTimeEntryResponse.class, setParams());
     }
 
@@ -24,7 +24,7 @@ public class addTimeEntryServices extends BaseServices {
         params.put("description", DESCRIPTION.get());
         params.put("END", END.get());
         params.put("START", START.get());
-        params.put("projectId", PROYECT_ID.get());
+        params.put("PROYECTO", PROYECT_ID.get());
         return params;
     }
 
