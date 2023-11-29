@@ -8,20 +8,20 @@ import java.util.List;
 @Setter
 public class timeEntryResponse {
 
-    private String id;
-    private String description;
-    private List tagIds;
-    private String userId;
-    private boolean billable;
-    private Object taskId;
-    private String projectId;
-    private String workspaceId;
-    private TimeInterval timeInterval;
-    private List customFieldValues;
-    private String type;
-    private Object kioskId;
-    private HourlyRate hourlyRate;
-    private CostRate costRate;
-    private boolean isLocked;
+    public String id;
+    public String description;
+    public List tagIds;
+    public String userId;
+    public boolean billable;
+    public Object taskId;
+    public String projectId;
+    public String workspaceId;
+    public TimeInterval timeInterval;
+    public List customFieldValues;
+    public String type;
+    public Object kioskId;
+    public HourlyRate hourlyRate;
+    public CostRate costRate;
+    public boolean isLocked;
 
 }

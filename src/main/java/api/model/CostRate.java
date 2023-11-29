@@ -4,6 +4,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class CostRate {
-    private int amount;
-    private String currency;
+    public int amount;
+    public String currency;
 }

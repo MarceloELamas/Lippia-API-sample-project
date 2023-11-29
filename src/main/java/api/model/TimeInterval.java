@@ -7,7 +7,7 @@ import java.util.Date;
 @Getter
 @Setter
 public class TimeInterval {
-    private Date start;
-    private Date end;
-    private String duration;
+    public Date start;
+    public Date end;
+    public String duration;
 }
