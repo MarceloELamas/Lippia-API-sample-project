@@ -3,7 +3,7 @@ Feature: Delete time entry
   Scenario Outline: Eliminar una hora registrada por Workspace
     Given una cuenta creada en clockify y x-api-key generado
     And un workspaceId '<workSpaceId>' y proyectId '<proyectId>'
-    And una descripcion 'Horas Trabajadas', fecha hora de entrada '2023-11-27T15:00:00Z' y salida '2023-11-24T16:00:00Z'
+    And una descripcion 'Horas Trabajadas', fecha hora de entrada '2023-11-27T15:00:00Z' y salida '2023-11-27T16:00:00Z'
     And I perform a 'POST' to 'ADDTIMEUSER' endpoint with the 'addTimeEntry' and ''
     And status code 201 is obtained
     And obtengo un id timeEntry
