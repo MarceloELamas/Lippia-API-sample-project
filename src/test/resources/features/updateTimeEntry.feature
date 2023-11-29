@@ -1,5 +1,6 @@
+@updateTimeEntry
 Feature: Update time entry
-
+  @Smoke
   Scenario Outline: Actualizar campos de un registro de hora
     Given una cuenta creada en clockify y x-api-key generado
     And un workspaceId '<workSpaceId>' y timeId '<timeId>'

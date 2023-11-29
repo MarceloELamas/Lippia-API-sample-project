@@ -1,5 +1,6 @@
+@deleteTimeEntry
 Feature: Delete time entry
-
+  @Smoke
   Scenario Outline: Eliminar una hora registrada por Workspace
     Given una cuenta creada en clockify y x-api-key generado
     And un workspaceId '<workSpaceId>' y proyectId '<proyectId>'
