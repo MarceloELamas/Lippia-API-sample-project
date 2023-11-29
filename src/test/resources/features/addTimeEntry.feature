@@ -1,7 +1,6 @@
 @addTimeEntry
 Feature: Add Time Entry
 
-
   Scenario Outline: Agregar horas a un proyecto
     Given una cuenta creada en clockify y x-api-key generado
     And un workspaceId '<workSpaceId>' y proyectId '<proyectId>'
