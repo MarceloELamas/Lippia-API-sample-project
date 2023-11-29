@@ -12,6 +12,7 @@ import org.apache.commons.lang.StringUtils;
 import services.BaseServices;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
+import services.validatorService;
 
 public class timeEntrySteps extends PageSteps {
 
@@ -50,6 +51,6 @@ public class timeEntrySteps extends PageSteps {
 
     @Then("obtengo los datos de mi proyecto")
     public void obtengoLosDatosDeMiProyecto() {
-        idValidator.validate();
+        validatorService.validate();
     }
 }
