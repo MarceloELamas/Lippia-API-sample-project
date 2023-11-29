@@ -5,6 +5,7 @@ import com.crowdar.core.PageSteps;
 import com.google.api.client.repackaged.com.google.common.base.Splitter;
 import com.google.cloud.BaseService;
 import cucumber.api.java.en.When;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import org.apache.commons.lang.StringUtils;
 import services.BaseServices;
@@ -17,6 +18,12 @@ public class timeEntrySteps extends PageSteps {
     public void unaCuentaCreadaEnClockifyYXApiKeyGenerado() {
         String apikey = System.getenv("API_KEY");
         BaseServices.API_KEY.set(apikey);
+    }
+    @And("^un workspaceId '(.*)' y un id '(.*)'$")
+    public void unWorkspaceIdYUnId(String workSpaceId, String id) {
+        BaseServices.WORKSPACEID.set(workSpaceId);
+        BaseServices.ID.set(id);
+
     }
 
     @When("^I perform a '(.*)' to '(.*)' endpoint with the '(.*)' and '(.*)'$")
@@ -38,6 +45,7 @@ public class timeEntrySteps extends PageSteps {
         }
         return parameters;
     }
+
 
 
 }
